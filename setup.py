@@ -25,7 +25,7 @@ setup(
     python_requires=">=3.8",
     entry_points={
         "console_scripts": [
-            "FindUncommonShares=FindUncommonShares.finduncommonshares:main",  
+            "FindUncommonShares=finduncommonshares:main",  
         ],
     },
 )

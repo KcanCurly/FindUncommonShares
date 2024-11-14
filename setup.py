@@ -8,7 +8,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/KcanCurly/FindUncommonShares",
-    packages=find_packages(include=['finduncommonshares']),
+    packages=find_packages('finduncommonshares'),
     install_requires=[
         "impacket>=0.9.22",
         "xlsxwriter",

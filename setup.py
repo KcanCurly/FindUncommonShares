@@ -8,7 +8,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/KcanCurly/FindUncommonShares",
-    packages=find_packages(),
+    packages=find_packages(include=['finduncommonshares']),
     install_requires=[
         "impacket>=0.9.22",
         "xlsxwriter",
@@ -22,10 +22,10 @@ setup(
         "Intended Audience :: Information Technology",
         "Topic :: Security",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     entry_points={
         "console_scripts": [
-            "finduncommonshares=FindUncommonShares.finduncommonshares:main",  
+            "FindUncommonShares=finduncommonshares:main",  
         ],
     },
 )

@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 setup(
     name="FindUncommonShares",
     version="1.0.0",
-    author="p0dalirius",
-    description="A tool to find uncommon SMB shares on a network for penetration testing",
+    author="KcanCurly",
+    description="A Python tool to find uncommon SMB shares on a network for penetration testing purposes",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/p0dalirius/FindUncommonShares",
+    url="https://github.com/KcanCurly/FindUncommonShares",
     packages=find_packages(),
     install_requires=[
         "impacket>=0.9.22",
@@ -20,14 +20,12 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Intended Audience :: Information Technology",
-        "Intended Audience :: Science/Research",
-        "Intended Audience :: System Administrators",
         "Topic :: Security",
     ],
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "finduncommonshares=finduncommonshares:main",
+            "finduncommonshares=finduncommonshares:main",  # Update if the main entry point is different
         ],
     },
 )

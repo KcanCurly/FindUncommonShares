@@ -892,8 +892,7 @@ def load_targets(options):
     
     return final_targets
 
-
-if __name__ == '__main__':
+def main():
     options = parseArgs()
 
     # Parse hashes
@@ -970,3 +969,7 @@ if __name__ == '__main__':
         if options.debug:
             traceback.print_exc()
         print("[!] Error: %s" % str(e))
+
+
+if __name__ == '__main__':
+    main()

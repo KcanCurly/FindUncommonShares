@@ -894,7 +894,7 @@ def load_targets(options):
     return final_targets
 
 
-if __name__ == '__main__':
+def main():
     options = parseArgs()
 
     # Parse hashes
